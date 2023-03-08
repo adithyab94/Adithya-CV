@@ -1,0 +1,215 @@
+\documentclass[11pt, a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage{xcolor}
+    \usepackage{fontawesome}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=20in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+
+    \begin{document}
+\vspace*{-20pt}
+
+    
+
+%==== Profile ====%
+
+\begin{center}
+	{\Huge {\textbf{Adithya Balaji}}}\\
+	Ulm, Germany $\cdot$ adithya.b94@gmail.com $\cdot$ (+49) 15510 782415\\
+\end{center}
+
+\vspace{5mm}
+
+\header {\textbf{PROFILE}}
+\vspace{1mm}
+Experienced software engineer with international exposure and commitment to detail oriented, accurate work and background in diverse areas such as Artificial Intelligence, Computer vision, Data Engineering, Robotics and DevOps 
+
+\vspace{5mm}
+
+%==== Experience ====%
+\header{\textbf{PROFESSIONAL EXPERIENCE}}
+\vspace{1mm}
+
+\textbf{Embedded AI Developer - R\&D} \hfill Ulm, Germany\\
+
+\textbf{Huber Automotive AG} \hfill Dec 2022 - Present\\
+\begin{itemize} \itemsep 1pt
+        \item Developed edge AI models optimized for microcontrollers and processors, using frameworks such as TensorFlow Lite, PyTorch, and Explainable AI (XAI) techniques to improve transparency and accountability of models.
+        \item Utilized computer vision techniques, including object detection and tracking, to enable intelligent perception in robotics and edge AI applications.
+        \item Conducted sensor calibration and simulation to enable accurate and reliable perception in robotics and edge AI applications.
+        \item Integrated with the Robot Operating System (ROS) to enable efficient development and deployment of robotics and edge AI applications.
+        \item Possess experience with Adaptive Autosar, ASPICE, and ISO 26262, enabling development of safety-critical systems for automotive and other industries.
+\end{itemize}
+
+\textbf{AI Research Intern } \hfill Nantes, France\\
+
+\textbf{Reliev} \hfill Dec 2021 - September 2022\\
+\begin{itemize} \itemsep 1pt
+        \item Conducted extensive research on Epilepsy detection for bibliography purposes.
+        \item Utilized real-time time-series databases for signal processing and developed machine learning models to detect seizures in epileptic patients.
+        \item Extensive experience with feature engineering and selection techniques.
+        \item Designed unsupervised learning models and neural networks to create noise and seizure prediction algorithms.
+        \item Performed Unit tests and built CI/CD pipelines to ensure the quality and efficiency of codebase.
+        \item Skilled in Git, DevOps, Docker, and Linux-based development.
+        \item Built interactive visualizations and dashboards using Plotly and Dash to display and interpret results.
+\end{itemize}
+
+\textbf{Data and Automation Engineer} \hfill Chennai, India\\
+
+\textbf{EMIS Health} \hfill Dec 2017 - Dec 2019\\
+\begin{itemize} \itemsep 1pt
+        \item Developed Machine Learning models to analyze speech input of emergency calls for NHS, United Kingdom.
+        \item Worked on multiple Data Science and Analytics projects and integrated them with Datalake, delivering actionable insights to customers.
+        \item Extensive experience with Big Data technologies such as Apache Spark, Kafka, and Airflow, including testing data ingestion processes.
+        \item Proficient in working with both SQL and NoSQL databases, including SQL Server, Postgres, Presto, and DynamoDB.
+        \item Developed and implemented QA automation tests utilizing FlaUI, xUnit, Specflow, and Cucumber with C\# for .NET applications.
+        \item Skilled in working with various tools and platforms including AWS, Docker, Azure DevOps, CI/CD, Atlassian, and JIRA X-Ray
+        \end{itemize}
+
+\textbf{Associate Software Engineer} \hfill Chennai, India\\
+
+\textbf{Accenture} \hfill Dec 2016 - Dec 2017\\
+\begin{itemize} \itemsep 1pt
+        \item Conducted analysis of large-scale telecommunications data utilizing Data Warehousing and ETL techniques.
+        \item Created automation frameworks using Python and Selenium to increase testing efficiency and accuracy.
+        \item Experience with various tools such as Splunk, Tableau, etc., for data visualization and analysis purposes.
+        \item Utilized HP ALM for project management purposes, ensuring that projects were completed on time and within budget.
+\end{itemize}
+
+\vspace{2mm}
+
+%==== Education ====%
+\header{\textbf{EDUCATION}}
+\vspace{3mm}
+\textbf{Ecole centrale de Nantes, France}\hfill Jan 2020 - Sept 2022\\
+M.Sc Advanced Robotics and AI \hfill \\
+\vspace{3mm}
+\textbf{Anna University, India}\hfill Aug 2012 - Apr 2016\\
+Bachelor of Engineering - Automobile Engineering \hfill \\
+
+\vspace{5mm}
+\renewcommand{\arraystretch}{1.5}
+%==== TECHNICAL SUMMARY ====%
+
+\header{\textbf{TECHNICAL SUMMARY}}
+\vspace{3mm}
+
+\begin{tabular}{ p{5cm}p{5cm} }
+Python and AI   &\faCircle \faCircle \faCircle \faCircle \faCircle   \\
+Artificial Intelligence   &\faCircle \faCircle \faCircle \faCircle \faCircle \\
+Data engineering  &\faCircle \faCircle \faCircle \faCircle \faCircleO  \\
+CI/CD and DevOps  &\faCircle \faCircle \faCircle \faCircle \faCircleO \\
+Computer vision, ROS, Linux  &\faCircle \faCircle \faCircle \faCircleO \faCircleO  \\
+C++, C\#  &\faCircle \faCircle \faCircle \faCircleO \faCircleO  \\
+\end{tabular}
+
+\vspace{5mm}
+%==== LANGUAGES ====%
+\header{\textbf{CERTIFICATIONS/ WORKSHOPS / EXTRAS}}
+\vspace{1mm}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{ p{8cm}p{5cm} }
+Foundation Masters in Control and Robotics   &Centrale Nantes  \\
+Machine learning scientist with python    &DataCamp \\
+Data Scientist Nanodegree &Udacity \\
+AI winter school 2021 &MIAI Grenoble and PRAIRIE \\
+HackZurich 2020 &Hackathon \\
+\end{tabular}
+
+% \vspace{5mm}
+
+ \newpage
+
+%==== LANGUAGES ====%
+\header{\textbf{LANGUAGES}}
+\vspace{1mm}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{ p{3cm}p{3cm} }
+English   &Bilingual  \\
+French   &Intermediate \\
+German &Elementary \\
+Tamil &Bilingual \\
+\end{tabular}
+
+
+
+ \vspace{5mm}
+% %==== References ====%
+
+\header{\textbf{REFRENCES}}
+\vspace{3mm}
+\textbf{Prof. Olivier Kermorgant}\hfill Associate Professor of Robotics at Centrale Nantes\\
+olivier.kermorgant@ec-nantes.fr   \hfill +33 (0)2 40 37 69 99\\
+\vspace{3mm}
+\textbf{Prof. Eric Le-Carpentier}\hfill Professor of Signal Processing at Centrale Nantes\\
+Eric.Le-Carpentier@ec-nantes.fr \hfill +33 (0)2 40 37 16 00\\
+
+
+\end{document}
+
+%==== References ====%
+\header{\textbf{TECHNICAL SUMMARY}}
+\vspace{3mm}
+
